@@ -12,13 +12,12 @@ app.use(express.static('public'));
 
 // Handling form submission
 app.post('/submit', (req, res) => {
-  const { name, email, subject, message } = req.body;
-  // Process the form data here (e.g., save to a database, send an email)
+  const { name, email, subject, message } = req.body; //access data
   console.log('Form submitted:', { name, email, subject, message });
-  res.send('Form submitted successfully!');
+  res.send('Form submitted successfully!'); //display message popup
 });
 
-// Start the server
+// Start server
 app.listen(port, () => {
   console.log(`Server is listening at http://localhost:${port}`);
 });
