@@ -24,19 +24,19 @@
     <div class="contactcontainer">
         <div class="form-wrapper">
             <h2 class="form-heading">Contact</h2>
-            <form class="contact-form" action="/submit" method="POST">
-                <input type="text"
+            <form class="contact-form" action="/submit-form" method="post" onsubmit="return validateForm()">
+                <input type="text" name="name"
                 placeholder="Name"
                 class="contact-form-input" id="nameInput"/>
-                <input type="email"
+                <input type="email" name="email"
                 placeholder="Email"
                 class="contact-form-input" id="emailInput"/>
-                <input type="text"
+                <input type="text" name="subject"
                 placeholder="Subject"
                 class="contact-form-input" id="subjectInput"/>
                 <textarea class="contact-form-input
                     contact-form-textarea"
-                    placeholder="Message" id="messageInput"
+                    placeholder="Message" id="messageInput" name="message"
                 ></textarea>
                 <input type="submit" class="form-submit-btn" value="Submit" />
             </form>

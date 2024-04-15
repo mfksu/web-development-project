@@ -22,13 +22,13 @@
  document.addEventListener("DOMContentLoaded", function () {
     var form = document.querySelector('.contact-form');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
+    // form.addEventListener('submit', function (event) {
+    //     event.preventDefault();
 
-        if (validateForm()) {
-            alert('Form submitted successfully!');
-        }
-    });
+    //     if (validateForm()) {
+    //         alert('Form submitted successfully.');
+    //     }
+    // });
 
     function validateForm() {
         var nameInput = document.getElementById('nameInput');
