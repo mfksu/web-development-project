@@ -1,9 +1,9 @@
- //Header Change
+
  const formHeading = document.querySelector(".form-heading");
  const formInputs = document.querySelectorAll(".contact-form-input");
  
  
- 
+  //Header Change
  formInputs.forEach((input) => {
      input.addEventListener("focus", () => {
          formHeading.style.opacity = "0";
